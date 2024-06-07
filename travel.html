@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RESOURCES/CSS/style.css" type="text/css">
+    <title>Travel Vlog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Garamond&family=Book+Antiqua&family=Poor+Richard&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="travel.html">Travel Vlog</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="unilife.html">Uni Life</a></li>
+            <li><a href="childhood.html">Childhood</a></li>
+            <li><a href="Others.html">Others</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h1>TRAVEL VLOG</h1>
+
+<p>For this page, I will show you guys my travel vlog to the places I go with my family and friends. ENJOY!!</p>
+<hr>
+
+<div class="section" id="travel">
+    <h2>TRAVEL TO THAILAND</h2>
+            <video autoplay loop muted playsinline>
+            <source src="RESOURCES/VIDEO/thai.mp4" type="video/mp4">
+        </video>
+    </div>
+    <p>This trip was last year with my family. We went to Pattani, Narathiwat, and Songkhla for 4 days and 3 nights. Actually, we only planned to stay for 3 days and 2 nights but it was the rainy season and we were stranded due to flooding in some border areas.</p>
+</div>
+
+<hr>
+
+<div class="section" id="genting">
+    <h2>GOING TO GENTING HIGHLAND WITH NONOL!</h2>
+        <video autoplay loop muted playsinline>
+            <source src="RESOURCES/VIDEO/gentingh.mp4" type="video/mp4">
+        </video>
+    </div>
+    <p>When I was in semester 2, Enol and I planned a short trip to Genting Highland. We went there by bus from Penang and with only RM60+, we were able to survive there without sleeping in a hotel. Truly unforgettable and very enjoyable memories.</p>
+</div>
+
+<hr>
+
+<div class="section" id="photo-gallery">
+    <h2>SOME PHOTOS IN THAILAND <3</h2>
+    <div class="collage">
+        <img src="RESOURCES/IMAGES/thai1.jpg" alt="Image 1">
+        <img src="RESOURCES/IMAGES/thai2.jpg" alt="Image 2">
+        <img src="RESOURCES/IMAGES/thai3.jpg" alt="Image 3">
+        <img src="RESOURCES/IMAGES/thai4.jpg" alt="Image 4">
+        <img src="RESOURCES/IMAGES/thai5.jpg" alt="Image 5">
+        <img src="RESOURCES/IMAGES/thai6.jpg" alt="Image 6">
+        <img src="RESOURCES/IMAGES/thai7.jpg" alt="Image 7">
+        <img src="RESOURCES/IMAGES/thai8.jpg" alt="Image 8">
+        <img src="RESOURCES/IMAGES/thai9.jpg" alt="Image 9">
+        <img src="RESOURCES/IMAGES/thai10.jpg" alt="Image 10">
+    </div>
+</div>
+
+<hr>
+
+<div class="section" id="slideshow">
+    <h2>SWEET MEMORIES WITH NONOLS <3</h2>
+    <div id="slideshow-example" data-component="slideshow">
+        <div role="list">
+            <div class="slide">
+                <img src="RESOURCES/IMAGES/enol1.jpg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="RESOURCES/IMAGES/enol2.jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="RESOURCES/IMAGES/genting1.jpg" alt="Slide 3">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var slides = document.querySelectorAll('#slideshow-example .slide');
+        var currentSlide = 0;
+        var slideInterval = setInterval(nextSlide, 2000);
+
+        function nextSlide() {
+            slides[currentSlide].style.display = 'none';
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].style.display = 'block';
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="RESOURCES/CSS/style.css" type="text/css">
+    <title>Childhood</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="travel.html">Travel Vlog</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="unilife.html">Uni Life</a></li>
+            <li><a href="childhood.html">Childhood</a></li>
+            <li><a href="Others.html">Others</a></li>
+        </ul>
+    </nav>
+</header>
+
+<br><br>
+
+<h1 style="text-align: center; font-family: Book Antiqua; font-size: 40px; color: brown;">My Childhood</h1>
+
+<p style="font-size: 20px; text-align:center; font-family: Garamond; color: brown;">Just a quick reminder, for this part it might get a little bit touchy and sad. I will tell a little bit about myself.</p>
+
+<hr>
+
+<h1>Please play this songs while you read this page :)</h1>
+
+<center>
+ <audio id="bgm">
+        <source src="RESOURCES/AUDIO/song1.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div>
+        <button id="prevBtn">Previous</button>
+        <button id="toggleBtn">Play/Pause</button>
+        <button id="nextBtn">Next</button>
+    </div>
+
+    <script>
+        const bgm = document.getElementById('bgm');
+        const toggleBtn = document.getElementById('toggleBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        const playlist = [
+            "RESOURCES/AUDIO/song2.mp3",
+            "RESOURCES/AUDIO/song3.mp3",
+            "RESOURCES/AUDIO/song4.mp3",
+            "RESOURCES/AUDIO/song1.mp3"
+        ];
+        let currentSongIndex = 0;
+        let isPlaying = false;
+
+        function toggleMusic() {
+            if (isPlaying) {
+                bgm.pause();
+                toggleBtn.textContent = 'Play';
+            } else {
+                bgm.play();
+                toggleBtn.textContent = 'Pause';
+            }
+            isPlaying = !isPlaying;
+        }
+
+        function playSong(index) {
+            bgm.src = playlist[index];
+            bgm.play();
+            toggleBtn.textContent = 'Pause';
+            isPlaying = true;
+        }
+
+        function nextSong() {
+            currentSongIndex = (currentSongIndex + 1) % playlist.length;
+            playSong(currentSongIndex);
+        }
+
+        function prevSong() {
+            currentSongIndex = (currentSongIndex - 1 + playlist.length) % playlist.length;
+            playSong(currentSongIndex);
+        }
+
+        // Event listeners
+        toggleBtn.addEventListener('click', toggleMusic);
+        nextBtn.addEventListener('click', nextSong);
+        prevBtn.addEventListener('click', prevSong);
+
+        // Automatically play the next song when the current song ends
+        bgm.addEventListener('ended', nextSong);
+    </script><br><br><hr><br>
+</center>
+
+<div class="container">
+    <center>
+        <img src="RESOURCES/IMAGES/alya7.jpg" alt="Description of image" style="width: 30%;">
+    </center>
+ 
+<div class="text-box">
+        <h1>HYE!</h1>
+        <p>This is me when I was 4 years old. Do you see that powder under my neck, my dad put it every time after I shower. Look at her with a smile that even her eyes disappear, oh how happy she is. At this time there is not a single problem in the mind that needs to be thought about. Far away from stress, confused thoughts and other things. At this time I was the only one in the family before my younger brother. I am very spoiled by both my parents.</p>
+    </div>
+</div>
+</div>
+
+<br>
+
+<div class="container">
+    <center>
+        <img src="RESOURCES/IMAGES/alya9.jpg" alt="Description of image" style="width: 30%;">
+        <img src="RESOURCES/IMAGES/alya2.jpg" alt="Description of image" style="width: 30%;">
+    </center>
+    <div class="text-box">
+        <p>During my early years, my dad was not just a father but also my closest companion. We were inseparable, sharing adventures, laughter, and secrets that bound us together like kindred spirits. Whether it was playing catch in the backyard, building forts out of blankets, or embarking on imaginary quests, every moment spent with him was imbued with joy and wonder. Our bond was a fortress, impervious to the distractions and demands of the outside world.</p>
+    </div>
+</div>
+
+<br><br>
+
+<div class="container">
+    <center>
+        <img src="RESOURCES/IMAGES/alya8.jpg" alt="Description of image" style="width: 30%;">
+        <img src="RESOURCES/IMAGES/alya1.jpg" alt="Description of image" style="width: 30%;">
+    </center>
+    <div class="text-box">
+        <p>Throughout my life, my relationship with my mom has always been a special and unbreakable bond, one that was never lost or forgotten. Even when I was just a few years old, I remember always being by her side and sharing everything with her, from my first steps to my first day of kindergarten.  I remember the first time I took my first steps. As I stumbled and fell, my mom was there behind me every step of the way to lift me up and comfort me. When I was scared, my mom was always the first to hug me and tell me everything would be okay. She was my rock, and I knew that she would always be there for me.</p>
+    </div>
+</div>
+
+<br><br>
+
+<div class="container">
+    <center>
+        <img src="RESOURCES/IMAGES/alya12.jpg" alt="Description of image" style="width: 30%;">
+        <img src="RESOURCES/IMAGES/alya4.jpg" alt="Description of image" style="width: 30%;">
+    </center>
+    <div class="text-box">
+        <p>In the end, our relationship may be different now, but it will always be a part of who I am. I am grateful for the time we spent together, and the memories we created. I can only hope that one day, we will be able to rekindle the love and closeness that once existed between us. Despite the challenges you faced, it's not too late to become the happy woman you want to be. You have the power to change your life and create the future you want to live. It may not be easy, and it may take some time, but it's worth it. You deserve to be happy, and you deserve to feel loved and valued. Please don't give up on yourself. You are worth the effort, and you deserve a brighter future. Remember that you are loved, and you are never alone.</p>
+    </div>
+ <br><br> 
+
+<h1>STOP !! BEFORE YOU GO TO OTHER PAGES PLEASE CLICK THIS LINK BELOW HEHE</h1>
+
+<center>
+ <a href="https://gifft.me/b#xhw6HyxaRpt0b8ezx6K6">this babyy</a>
+</center>
+<br><br>

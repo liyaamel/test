@@ -1,0 +1,234 @@
+/* RESOURCES/CSS/style.css */
+
+body {
+    font-family: 'Garamond', 'Book Antiqua', 'Poor Richard', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FDE5EC;
+    color: #333;
+}
+
+header {
+    background-color: #E48586;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Book Antiqua', serif;
+    font-size: 40px;
+    color: brown;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Garamond', serif;
+    color: brown;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.section {
+    margin: 20px auto;
+    text-align: center;
+    max-width: 900px;
+}
+
+.section h2 {
+    font-family: 'Poor Richard', serif;
+    font-size: 40px;
+    color: #9A3B3B;
+    margin-bottom: 10px;
+}
+
+.media-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.media-container img, .media-container video {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.media-container img {
+    width: 20%;
+}
+
+.media-container video {
+    width: 30%;
+}
+
+.collage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.collage img {
+    width: 30%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+#slideshow-example {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#slideshow-example .slide {
+    display: none;
+}
+
+#slideshow-example .slide:first-child {
+    display: block;
+}
+
+#slideshow-example img {
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto; 
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.media-container img {
+    width: 30%; 
+}
+
+.media-container video {
+    width: 40%; 
+}
+
+.slideshow-container {
+            position: relative;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from { opacity: .4 }
+            to { opacity: 1 }
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+.text-box {
+    margin-top: 20px; 
+    padding: 20px; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    text-align: center; 
+}
+
+.collage-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            max-width: 900px;
+            border: 5px solid #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .collage-item {
+            width: 100%;
+            overflow: hidden;
+        }
+        .collage-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .collage-item img:hover {
+            transform: scale(1.1);
+        }
+
